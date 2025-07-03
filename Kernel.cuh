@@ -22,10 +22,10 @@
 #define PREFIX_MAX_LEN 25
 #define SUFFIX_MAX_LEN 20
 
-#define ALPHABET_LEN 14
+#define ALPHABET_LEN 15
 
-const char ALPHABET[15] = "0123456789iopu";
-__device__ __constant__ char _ALPHABET[15] = "0123456789iopu";
+const char ALPHABET[16] = "0123456789fgrty";
+__device__ __constant__ char _ALPHABET[16] = "0123456789fgrty";
 
 cudaError_t loadPrefix(const char* _prefix, size_t const prefixLen);
 cudaError_t loadLevel(int _level);
